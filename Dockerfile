@@ -7,7 +7,7 @@ ENTRYPOINT ["/bin/cassandra-docker"]
 COPY install-ubuntu-packages.sh /
 RUN /bin/sh /install-ubuntu-packages.sh
 
-wget http://www.apache.dist/cassandra/2.1.3/apache-cassandra-2.1.3-bin.tar.gz
+RUN wget http://www.apache.dist/cassandra/2.1.3/apache-cassandra-2.1.3-bin.tar.gz
 COPY apache-cassandra-2.1.3-bin.tar.gz /
 
 COPY install-cassandra-tarball.sh /
