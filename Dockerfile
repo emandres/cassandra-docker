@@ -1,5 +1,5 @@
 FROM       ubuntu:14.04
-MAINTAINER Al Tobey <atobey@datastax.com>
+MAINTAINER Eric Andres <eric-andres@pluralsight.com>
 
 VOLUME ["/data"]
 ENTRYPOINT ["/bin/cassandra-docker"]
